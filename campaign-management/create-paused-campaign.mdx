@@ -1,0 +1,46 @@
+---
+title: "Turn an approved plan into a paused campaign"
+description: "Move from an approved media plan to a reviewed campaign proposal, check supported creation requirements, and verify the created entities remain paused."
+keywords:
+  - "Nerve AI"
+  - "Manage campaigns with AI"
+  - "Turn an approved plan into a paused campaign"
+noindex: true
+tag: "Draft"
+---
+
+Campaign setup happens through an AI request or workflow using supported platform tools. Nerve does not have a standalone campaign-building page in the inspected navigation. Begin with an approved plan and request paused creation explicitly.
+
+<Note>
+Draft for review. This guide includes steps or behavior awaiting product verification.
+</Note>
+
+## Prepare the inputs
+
+Have the approved plan, target platform and account, campaign objective, budget and currency, dates and timezone, audience, destinations, creative assets, and measurement requirements ready. Use an external assistant for attachments when needed.
+
+## Review the proposed structure
+
+```text
+Use this approved plan to prepare a Meta campaign in Example Brand.
+First check which creation operations and required assets are
+available. Show the proposed campaign, ad sets, and ads, including
+objective, budgets, currency, dates, audience, placements, tracking,
+destination URLs, identity, and creative assignments.
+Request PAUSED status at every supported delivery level.
+Explain unsupported fields or defaults. Do not create anything yet.
+```
+
+Resolve missing assets, unsupported formats, ambiguous dates, and budget mismatches before approval. Do not let an assumed default decide whether an ad can deliver.
+
+## Approve the specific creation
+
+Review the final entity list and settings. If you want to proceed, approve that exact proposal and repeat the paused requirement. A permission prompt for an execution tool is separate from approving the business settings.
+
+## Verify what was created
+
+Ask for each created entity's name, ID, parent relationship, actual status, budget, and any failed operations. Inspect the result in the advertising platform as well. An assistant saying “created” is not enough to establish that every child entity succeeded or that it is paused.
+
+If creation partially fails, inspect the existing entities before retrying so you do not create duplicates. Keep activation as a separate decision after reviewing creative, tracking, and delivery settings.
+
+For the approval checklist, see [Review and approve AI actions](/campaign-management/approve-actions).

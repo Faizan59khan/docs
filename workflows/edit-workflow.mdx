@@ -1,0 +1,40 @@
+---
+title: "Edit workflow steps, sources, and destinations"
+description: "Review and edit a workflow sequence, update source accounts and output destinations, and inspect regenerated steps before saving and running the changes."
+keywords:
+  - "Nerve AI"
+  - "Automate with workflows"
+  - "Edit workflow steps, sources, and destinations"
+noindex: true
+tag: "Draft"
+---
+
+The workflow builder lets you edit the task sequence and the accounts or destinations it uses. Review these together: a source change can make an otherwise familiar step operate on a different client.
+
+<Note>
+Draft for review. This guide includes steps or behavior awaiting product verification.
+</Note>
+
+## Edit the sequence
+
+1. Open **AI Agents > Workflows**, then open the intended workflow.
+2. Check the workflow title and status before editing.
+3. In **Builder**, read the instructions and each step in order.
+4. Edit step text, use **Add Step**, or use the move controls to change order. Delete a step only when you intend to remove that work.
+5. Save using the available save control and check for any unsaved-change notice before leaving.
+
+Write one clear outcome per step. For example, retrieve data, calculate comparisons, then prepare recommendations. State when a step must stop because a required source is missing.
+
+## Change sources
+
+Update the selected platform connection and account in **Connected Sources**. If the builder says sources changed and asks you to regenerate, use **Regenerate Steps** only after reviewing what you want preserved. Read the entire resulting sequence: regeneration can rebuild instructions rather than merely changing an account label.
+
+## Check destinations
+
+Inspect **Connected Destinations** and every email recipient. An instruction saying “do not email” should not be your only check when an email destination is still configured. Remove an unintended destination and confirm the saved state before running.
+
+## Verify the next run
+
+Review the version, accounts, actions, and output expected from the updated workflow. Avoid editing a running workflow when you need certainty about which instructions are executing; inspect its run version first.
+
+For earlier instructions, see [workflow versions](/workflows/versions). For the execution check, use [Run a workflow](/workflows/run-results).

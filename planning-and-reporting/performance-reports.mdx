@@ -1,0 +1,43 @@
+---
+title: "Create weekly and monthly performance reports"
+description: "Create a repeatable marketing report with clear dates, comparable periods, source metrics, currency handling, and recommendations grounded in retrieved data."
+keywords:
+  - "Nerve AI"
+  - "Plan, analyze, and report"
+  - "Create weekly and monthly performance reports"
+noindex: true
+---
+
+A useful report explains results against a goal and shows where its numbers came from. Specify the account scope and period before asking for a weekly or monthly summary.
+
+## Define the report
+
+Choose the accounts or advertiser group, calendar dates, timezone, business result, comparison period, and output format. Use complete days for routine comparisons unless you intentionally need an in-progress update.
+
+```text
+Create a weekly report for Example Brand's selected Meta and Google Ads
+accounts for the last 7 complete days versus the preceding 7 days.
+Show dates, source account currencies, spend, clicks, and our purchase
+conversion metrics. Keep different currencies separate unless you
+can state and verify a conversion method. Show platform-reported
+conversions separately; do not claim deduplicated customers.
+Include an executive summary, campaign table, three findings,
+missing data, and next actions. Create a downloadable report if
+supported. Read only; do not send email or change settings.
+```
+
+For a monthly report, replace the periods with the last complete calendar month and the comparison month. State whether a change is an absolute difference, a percentage change, or a percentage-point change.
+
+## Review before sharing
+
+1. Confirm the accounts and exact dates.
+2. Check whether every source loaded and whether lists were complete.
+3. Verify currencies and conversion definitions.
+4. Check that recommendations follow from the reported evidence.
+5. Open and review any generated file, then save a copy.
+
+Use [generated files](/nerve-ai/generated-files) for preview and download instructions. If a metric is unavailable, show it as unavailable rather than silently replacing it with zero.
+
+## Make it repeatable
+
+Save the instructions in a Reporting [workflow](/workflows/create-workflow). Test the output manually, review destination recipients, then [set a schedule](/workflows/schedule). Sending a report by email is a separate configured action from generating it in chat.

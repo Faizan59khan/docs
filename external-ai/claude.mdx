@@ -1,0 +1,48 @@
+---
+title: "Connect Nerve to Claude"
+description: "Add Nerve as a remote connector in Claude, authorize your Nerve account, and confirm the intended marketing accounts with a read-only request."
+keywords:
+  - "Nerve AI"
+  - "Use Nerve in Claude and ChatGPT"
+  - "Connect Nerve to Claude"
+noindex: true
+tag: "Draft"
+---
+
+Connect Nerve to Claude when you want to analyze connected marketing data from a Claude conversation. Connect at least one marketing platform in Nerve first.
+
+<Note>
+Draft for review. This guide includes steps or behavior awaiting product verification.
+</Note>
+
+## Add the connector
+
+1. Open Claude and go to **Customize > Connectors**.
+2. For a personal account, choose **+ Add > Add custom connector**. Name it **Nerve** and enter this server URL:
+
+   ```text
+   https://mcp.nerve.mattemena.com/mcp
+   ```
+
+3. Continue through the authentication setup using Nerve's sign-in flow. Complete authorization with the intended Nerve identity and check any workspace information shown.
+4. If your organization manages connectors, ask its administrator to add Nerve first, then connect your own account from the available connector list.
+
+These navigation paths follow [Claude's custom-connector guidance](https://support.claude.com/en/articles/11175166-get-started-with-custom-connectors-using-remote-mcp). Older Nerve screens may refer to **Settings > Connectors**.
+
+## Confirm a useful connection
+
+Open a conversation with Nerve available and ask:
+
+```text
+Use Nerve to check my connected platforms and list the accessible
+Meta ad accounts. Identify which Example Brand account you can use.
+Do not change anything.
+```
+
+Review the tool request and allow the read when appropriate. Confirm the account list matches your intended client before requesting performance data. A connector appearing in the list is not by itself proof that every marketing account is accessible.
+
+## If tools do not appear
+
+Check that Nerve is connected and available in the conversation. Inspect connector tool permissions, and confirm your organization allows it. If the returned accounts differ from your browser workspace, follow [workspace and access checks](/external-ai/workspace-and-access).
+
+For tool-approval prompts, see [Understand tool requests](/external-ai/tool-permissions). For Claude Code and its packaged skills, use the [plugin installation guide](/external-ai/claude-code).

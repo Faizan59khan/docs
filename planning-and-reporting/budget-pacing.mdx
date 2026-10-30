@@ -1,0 +1,37 @@
+---
+title: "Check budget pacing without changing budgets"
+description: "Compare spend with your campaign-period budget, inspect delivery and remaining requirements, and keep pacing analysis separate from budget updates."
+keywords:
+  - "Nerve AI"
+  - "Plan, analyze, and report"
+  - "Check budget pacing without changing budgets"
+noindex: true
+---
+
+A pacing check compares spend so far with the budget and dates you intended. Ask for analysis only when you want to understand delivery before deciding on changes.
+
+## Supply the budget context
+
+Give the assistant the account, campaign scope, total campaign budget, currency, start and end dates, and date through which spend should be measured. Distinguish a campaign-period budget from a platform daily budget.
+
+```text
+Check pacing for Example Brand's selected campaigns.
+Planned total: AED 30,000 from 1 to 30 November 2026.
+Use complete-day spend through 10 November in Asia/Dubai.
+Compare actual spend with a straight-line plan, state day-count
+assumptions, and calculate remaining budget and required daily spend.
+Identify campaigns contributing to the variance. Recommendations
+only: do not update budgets, statuses, bids, or schedules.
+```
+
+## Check the calculation
+
+For a 30-day plan with 10 complete days elapsed, straight-line planned spend is one-third of the total. With AED 30,000 planned, that is AED 10,000. If actual spend is AED 9,000, it is AED 1,000 below that illustrative plan; AED 21,000 remains across 20 days, or AED 1,050 per day on average.
+
+This arithmetic is a planning example, not a suggested platform budget. Promotions, uneven weekly demand, delivery constraints, and learning can make a straight-line plan unsuitable. Ask the assistant to state assumptions rather than treating pacing variance as an automatic reason to change spending.
+
+## Watch template instructions
+
+Review every step of a pacing workflow. The inspected **Daily Pacing Checker** template includes instructions to apply budget adjustments. Its name alone does not make it read-only. Remove change instructions and inspect the resulting steps before using it for analysis.
+
+For an actual adjustment, use a separate [change proposal](/campaign-management/review-changes) with current and proposed values.

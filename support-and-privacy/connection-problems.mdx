@@ -1,0 +1,43 @@
+---
+title: "Fix AI connection and missing-account problems"
+description: "Diagnose disabled tools, unfinished authorization, wrong account scope, expired access, empty results, and billing blocks without repeatedly reconnecting."
+keywords:
+  - "Nerve AI"
+  - "Troubleshooting and privacy"
+  - "Fix AI connection and missing-account problems"
+noindex: true
+---
+
+Start with the smallest failing step: assistant connection, platform authorization, account lookup, or data retrieval. Reconnecting everything at once makes the cause harder to identify.
+
+## Find the failing step
+
+| Symptom | Check first |
+| --- | --- |
+| No Nerve tools in the assistant | Nerve is connected, installed where required, and selected for the conversation. Check organization restrictions. |
+| Authorization keeps opening or never finishes | Correct production URL, intended Nerve identity, and any blocked or unfinished provider window. |
+| Platform connection is expired or revoked | Reconnect that platform and verify it. |
+| Connected login but account is missing | List actual accounts/properties and confirm provider permissions and client context. |
+| Accounts differ from your browser workspace | Inspect external authorization context before analyzing a client. |
+| Chat says select accounts | Apply at least one account in the Nerve AI picker. |
+| A report returns zero rows | Check dates, status filters, account, pagination, and whether a request failed. |
+| Analytics is empty | Create an advertiser group with supported accounts. |
+| Plan or payment card appears instead of data | Inspect the workspace's billing state and follow its displayed recovery action. |
+
+## Make a diagnostic request
+
+```text
+Diagnose Nerve access without changing anything. Check the connection,
+then list the actual accessible accounts or properties for Google Ads.
+Confirm whether Example Brand is present. If a request fails, report
+its error and scope. Distinguish an empty list from an access failure.
+Do not modify connections, settings, or campaigns.
+```
+
+For Radius or another specialist integration, name the platform explicitly and ask for its own connection lookup. A general connection summary may not expose every integration.
+
+## Retry narrowly
+
+After fixing a connection or permission issue, retry the account lookup first, then a small read. Do not rerun a workflow containing writes or email until you know which steps previously completed.
+
+If the problem persists, send support the experience used, platform, workspace, exact dates, error text, and failed step. Crop screenshots to exclude identities, account IDs, tokens, and client performance. See [Contact support](/support-and-privacy/contact-support).

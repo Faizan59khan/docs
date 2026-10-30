@@ -1,0 +1,39 @@
+---
+title: "Understand logins, ad accounts, and account scope"
+description: "Learn how a workspace, provider login, advertising account, property, and advertiser group affect the data Nerve uses for each request."
+keywords:
+  - "Nerve AI"
+  - "Connect your marketing platforms"
+  - "Understand logins, ad accounts, and account scope"
+noindex: true
+---
+
+A provider login can give access to several advertising accounts or properties. Connecting that login is the first step; selecting the intended data scope is the next.
+
+| Term | Meaning in your work |
+| --- | --- |
+| **Nerve workspace** | The working area with a team, connections, workflows, and billing. |
+| **Platform connection or login** | The identity authorized to access a provider such as Google or Meta. |
+| **Ad account, advertiser, customer, or property** | The particular business dataset you want to analyze. The term depends on the platform. |
+| **Advertiser group** | A collection of supported accounts for one business, used by Analytics and available for chat scoping. |
+
+## Example: one agency login, two clients
+
+An agency Google login can access both **Example Retail** and **Example Travel**. Connecting that login does not tell the assistant which client your next question concerns. Choose Example Retail's customer account, then ask for that account's campaigns and dates.
+
+## Choose scope for your experience
+
+- In **Nerve AI**, select accounts or an advertiser group and apply the selection before sending the message.
+- In **Claude or ChatGPT**, check the connected accounts and identify the intended account in your prompt. Naming an account is an instruction; do not treat the prompt as an access-control setting.
+- In a **workflow**, inspect every configured source and selected account before running it.
+- In **Analytics**, select the intended advertiser group.
+
+## Confirm the scope in the answer
+
+```text
+Before analyzing results, identify the platform and account you will use.
+If multiple accounts have this name, ask me to choose. Then confirm
+the date range, timezone, and currency. Do not combine other clients.
+```
+
+If the listed accounts differ from those visible in your browser, check the external assistant's authorization context. See [Choose the correct workspace](/external-ai/workspace-and-access) and [Choose chat accounts](/nerve-ai/choose-accounts).

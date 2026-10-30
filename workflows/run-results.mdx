@@ -1,0 +1,47 @@
+---
+title: "Run a workflow and understand its results"
+description: "Run a reviewed workflow manually, inspect its progress and history, and check the version, outputs, credits, and source completeness before using the result."
+keywords:
+  - "Nerve AI"
+  - "Automate with workflows"
+  - "Run a workflow and understand its results"
+noindex: true
+tag: "Draft"
+---
+
+A manual run executes the workflow's saved task. Review its instructions, sources, and destinations first, even when the title sounds like a simple report.
+
+<Note>
+Draft for review. This guide includes steps or behavior awaiting product verification.
+</Note>
+
+## Before you run
+
+Confirm the workflow version and account selections, check connections, and review available credits. Inspect every step for changes to campaigns, CRM records, connected spreadsheets, or email. Resolve unsaved changes and missing-source warnings before proceeding.
+
+## Start and inspect a run
+
+1. Open the workflow from **AI Agents > Workflows**.
+2. Click **Run** when you intend to execute the reviewed task.
+3. Open **Runs** to follow the current run and available step output.
+4. Check whether each expected step completed, failed, or was skipped.
+5. Open the resulting files or run details when available.
+
+## Read run history
+
+| Field | What to check |
+| --- | --- |
+| Status | Whether the run completed or needs investigation |
+| Trigger | Manual versus scheduled execution |
+| Version | Which saved instructions the run used |
+| Duration | Time recorded for this run |
+| Credits | Recorded usage for the run |
+| Output files | Files actually produced, which can be none |
+
+A Completed status does not by itself validate the report's assumptions or confirm every requested metric was available. Read the output for source failures, account scope, dates, currency, and missing data.
+
+## If output is missing
+
+Check which step was supposed to create it and inspect that step's output. An analysis can finish with text and no generated file. If email was configured, verify the destination separately rather than assuming a completion badge proves delivery.
+
+Do not use closing a browser tab as a way to stop a run. Check its current status and use the explicit stop control when available. For failures or repeated execution, follow [workflow recovery](/workflows/recover-failed-run).

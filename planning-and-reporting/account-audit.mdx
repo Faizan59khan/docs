@@ -1,0 +1,41 @@
+---
+title: "Audit an advertising account"
+description: "Run a scoped advertising-account audit that separates measured performance, tracking gaps, configuration findings, and proposed next actions."
+keywords:
+  - "Nerve AI"
+  - "Plan, analyze, and report"
+  - "Audit an advertising account"
+noindex: true
+---
+
+An account audit should tell you what is happening, what evidence supports the findings, and what to investigate next. Begin with one account and a defined business goal.
+
+## Prepare the audit
+
+1. Connect the platform and confirm the intended account.
+2. Choose a reporting period long enough for your question, plus a comparison period.
+3. Define the business result, such as purchases or qualified leads, and its target.
+4. Use the Prompt library's account-analysis prompt, a Claude Code audit skill, or a custom request.
+
+```text
+Audit Meta account Example Brand for the last 30 complete days
+against the previous 30. Our goal is purchases at a CPA of AED 50.
+Check campaign structure, spend distribution, conversion performance,
+creative trends, and available audience or tracking evidence.
+Separate measured findings, hypotheses, and unavailable checks.
+Rank five recommendations by expected impact and confidence.
+Include currency, attribution details if available, and source dates.
+Read only. Do not implement any recommendation.
+```
+
+## Assess the result
+
+Look for a finding tied to data, an explanation, and a next step. For example, a high CPA observation needs the spend, conversion count, period, and target behind it. A tracking concern should explain whether the assistant observed a configuration issue or only a mismatch in reported metrics.
+
+Ask the assistant to identify incomplete requests and unavailable checks. Do not accept an unsupported conclusion about tracking, creative quality, or audience overlap simply because it appears in an audit template.
+
+## Turn findings into work
+
+Select a small number of investigations or proposals. Keep budget, targeting, and status changes separate from the audit. Use [Review budget and optimization changes](/campaign-management/review-changes) for a current-versus-proposed table before approving implementation.
+
+To repeat an audit, use a read-only workflow with explicit accounts and output requirements, then review its steps before scheduling it.

@@ -1,0 +1,45 @@
+---
+title: "Connect and use Google Tag Manager"
+description: "Connect Google Tag Manager to Nerve, confirm the correct account or property, and start with a scoped read-only request before broader analysis."
+keywords:
+  - "Nerve AI"
+  - "Connect your marketing platforms"
+  - "Connect and use Google Tag Manager"
+noindex: true
+tag: "Draft"
+---
+
+Connect Google Tag Manager to inspect accounts, containers, workspaces, tags, triggers, variables, and versions. Use inspection to understand tracking before considering changes.
+
+<Note>
+Draft for review. This guide includes steps or behavior awaiting product verification.
+</Note>
+
+## Before you connect
+
+Use a Google identity with access to the required Tag Manager container. Know the container and workspace names, and whether you want to inspect a workspace or a published version.
+
+## Connect and verify
+
+1. In the intended workspace, open **Get started > Connect accounts**.
+2. Find **Tag Manager** and choose **Connect**.
+3. Complete the provider sign-in and review the permissions shown. Select an identity with access to the intended container.
+4. Back in Nerve, check the connection status and use **Verify** if available.
+5. Ask your assistant to list accessible Tag Manager accounts, containers, and workspaces before requesting a report.
+
+## What to ask Nerve
+
+Live discovery returned account and container inspection, workspaces, versions, tags, triggers, and variables. Ask for a tracking inventory that distinguishes current workspace configuration from published versions. Discovery of a tag does not establish that it fires correctly on a live site.
+
+```text
+For the Example Brand Tag Manager container, list its workspaces
+and available versions. Inspect the selected workspace and summarize
+tags, triggers, and variables related to lead tracking. Separate
+configuration findings from firing evidence. Do not edit or publish.
+```
+
+## Check scope and limits
+
+A Tag Manager workspace is inside a container; it is different from a Nerve workspace. Identify both when working across clients. If an assistant search does not find tools, ask it to search for Google Tag Manager or GTM by name. Keep publication and configuration changes outside a read-only audit.
+
+If the expected account is missing, use [connection troubleshooting](/support-and-privacy/connection-problems). For expired access, see [Check or reconnect an account](/connections/connection-status).

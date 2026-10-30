@@ -1,0 +1,44 @@
+---
+title: "Connect and use PFBM Analytics"
+description: "Connect PFBM Analytics to Nerve, confirm the correct account or property, and start with a scoped read-only request before broader analysis."
+keywords:
+  - "Nerve AI"
+  - "Connect your marketing platforms"
+  - "Connect and use PFBM Analytics"
+noindex: true
+tag: "Draft"
+---
+
+PFBM Analytics appears on Nerve's connection page. Its discoverable analytics tool describes flight-level reporting, spend measures, events, and currency groupings. Confirm what PFBM represents for your organization before using those figures.
+
+<Note>
+Draft for review. This guide includes steps or behavior awaiting product verification.
+</Note>
+
+## Before you connect
+
+Ask Nerve support to confirm eligibility, the advertiser data included, and the business meaning of each spend measure. Know the flights, date range, currency, and result events required for your report.
+
+## Connect and verify
+
+1. Open **Get started > Connect accounts** and locate **PFBM Analytics**.
+2. Review the available action. Confirm any access requirements with support before granting a new connection.
+3. Ask your external assistant to discover the PFBM connection and available reporting fields.
+4. Confirm the advertiser scope and metric definitions before requesting a report.
+
+## What to ask Nerve
+
+The inspected tool describes flight performance, event filtering, net-to-client and net-to-media spend, and currency grouping. Ask the assistant to explain these fields before calculating efficiency. You do not need to write SQL to ask a business question.
+
+```text
+Check available PFBM connections and describe the reporting fields
+for Example Brand. Explain net-to-client versus net-to-media spend,
+available currencies, event filters, and row limits. Do not query
+data until I confirm the advertiser, period, and spend definition.
+```
+
+## Check scope and limits
+
+The inspected schema describes a 1,000-row cap and non-additive reach. Do not sum reach across flights as though it were a deduplicated audience total. Ask whether a report was truncated and keep currencies separate. Tool descriptions alone do not verify data access or the meaning of your organization's measures.
+
+If the expected account is missing, use [connection troubleshooting](/support-and-privacy/connection-problems). For expired access, see [Check or reconnect an account](/connections/connection-status).

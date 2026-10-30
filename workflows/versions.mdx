@@ -1,0 +1,37 @@
+---
+title: "Use workflow versions and restore earlier instructions"
+description: "Find a workflow version, compare earlier instructions, and review accounts, destinations, and schedules before using a restored configuration."
+keywords:
+  - "Nerve AI"
+  - "Automate with workflows"
+  - "Use workflow versions and restore earlier instructions"
+noindex: true
+tag: "Draft"
+---
+
+Version history helps you return to earlier workflow instructions. Check what a version contains and inspect the result of restoration before running it.
+
+<Note>
+Draft for review. This guide includes steps or behavior awaiting product verification.
+</Note>
+
+## Review version history
+
+1. Open the workflow builder.
+2. Select the version control, such as **v3**, to open **Version History**.
+3. Inspect the available earlier versions and identify the one you intend to use.
+4. Compare the instructions and steps with the current workflow. Keep a record of any current details you may need later.
+
+Review the reason for restoration: a useful earlier analysis sequence can still contain an outdated website, reporting period, account reference, or email destination.
+
+## Restore and check
+
+Choose **Restore** for the intended version and read any confirmation. Afterward, check the title, instructions, step order, source accounts, destinations, active status, and schedule. Use the available save action if the interface indicates unsaved changes.
+
+Do not assume that every connection or schedule setting is part of the restored instruction version. Inspect each configured area before the next run. Restoration should also not be treated as a reversal of external changes made by previous runs.
+
+## Match a result to its version
+
+Open **Runs** and check the version recorded for the run you are investigating. A report produced by an earlier version may differ from what the current builder would generate.
+
+After restoration, make a controlled manual test and compare its output before enabling recurrence. For a failed or partially completed run, use [workflow recovery](/workflows/recover-failed-run) rather than restoring instructions and assuming that previous external actions were undone.

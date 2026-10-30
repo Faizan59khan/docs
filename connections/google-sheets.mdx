@@ -1,0 +1,45 @@
+---
+title: "Connect and use Google Sheets"
+description: "Connect Google Sheets to Nerve, confirm the correct account or property, and start with a scoped read-only request before broader analysis."
+keywords:
+  - "Nerve AI"
+  - "Connect your marketing platforms"
+  - "Connect and use Google Sheets"
+noindex: true
+tag: "Draft"
+---
+
+Connect Google Sheets to read planning data or write a report to a spreadsheet. Name the spreadsheet, worksheet, and range so the assistant works in the intended location.
+
+<Note>
+Draft for review. This guide includes steps or behavior awaiting product verification.
+</Note>
+
+## Before you connect
+
+Use a Google identity with access to the spreadsheet. For writing, confirm edit access and decide whether the task should append new rows or replace existing values.
+
+## Connect and verify
+
+1. In the intended workspace, open **Get started > Connect accounts** and find **Google Sheets**.
+2. Choose **Connect**. If the Pipedream introduction opens, review it before choosing **Continue**.
+3. Complete the provider sign-in and permission screens for the intended Google account.
+4. Return to Nerve and check the connection status. Use **Verify** if available.
+5. Ask your assistant to list accessible spreadsheets and worksheets, then confirm the one to use.
+
+## What to ask Nerve
+
+Available spreadsheet tools include reading values, finding rows, creating a spreadsheet, appending rows, updating cells, clearing values, and deleting rows. These actions have different effects. Begin by inspecting a small range; approve a destination and write mode before exporting data.
+
+```text
+Find spreadsheet Example Brand Reporting and worksheet Weekly.
+Read A1:F10 and summarize the column headings and date format.
+Then propose how a weekly report could be appended without overwriting
+existing rows. Do not write, clear, or delete anything.
+```
+
+## Check scope and limits
+
+A spreadsheet is the file; a worksheet is a tab inside it. A range such as A1:F10 identifies cells within that tab. For repeat exports, define a date or run identifier that lets you spot duplicate rows. Do not request a clear or overwrite when your goal is to add a new reporting period.
+
+If the expected account is missing, use [connection troubleshooting](/support-and-privacy/connection-problems). For expired access, see [Check or reconnect an account](/connections/connection-status).

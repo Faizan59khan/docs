@@ -1,0 +1,46 @@
+---
+title: "Connect Nerve to ChatGPT"
+description: "Add Nerve as a custom MCP plugin in ChatGPT, complete OAuth, install and select the plugin, and verify access with a scoped read-only request."
+keywords:
+  - "Nerve AI"
+  - "Use Nerve in Claude and ChatGPT"
+  - "Connect Nerve to ChatGPT"
+noindex: true
+tag: "Draft"
+---
+
+Use the Nerve plugin in ChatGPT to work with your connected marketing platforms. First connect a platform in Nerve and confirm that your ChatGPT account or organization permits custom MCP plugins.
+
+<Note>
+Draft for review. This guide includes steps or behavior awaiting product verification.
+</Note>
+
+## Add and install Nerve
+
+1. In ChatGPT on the web, open **Plugins**, choose the plus button, then **Add custom MCP server**.
+2. Name it **Nerve**. Set **Connection** to **Server URL** and enter:
+
+   ```text
+   https://mcp.nerve.mattemena.com/mcp
+   ```
+
+3. Use OAuth authentication and complete Nerve sign-in with the intended identity.
+4. Review the warning, acknowledge it if you want to continue, and choose **Create as a plugin**.
+5. Find Nerve in your personal or workspace plugins and install it.
+6. In a conversation, type **@** and select the installed Nerve plugin.
+
+These steps follow [OpenAI's custom MCP server guide](https://developers.openai.com/api/docs/guides/custom-mcp-server). Availability and organization policies can affect the options shown. If the add option is missing, check with your ChatGPT administrator.
+
+## Test account access
+
+```text
+Use Nerve to check my connected platforms. List the Google Ads
+customer accounts I can access and confirm the Example Brand account.
+Do not create, update, pause, or delete anything.
+```
+
+Inspect the tool request and resulting account list. Then try a small report for that specific account and period. If ChatGPT gives a general answer without retrieving data, confirm that the Nerve plugin was selected and its tools are available.
+
+## If the connection is incomplete
+
+Check the production server URL, finish any open authorization window, and confirm the Nerve identity used. A browser workspace switch does not establish that ChatGPT's authorization switched too. Use [workspace and access checks](/external-ai/workspace-and-access) before working on a different client.

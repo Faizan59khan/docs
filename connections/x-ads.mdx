@@ -1,0 +1,45 @@
+---
+title: "Connect and use X Ads"
+description: "Connect X Ads to Nerve, confirm the correct account or property, and start with a scoped read-only request before broader analysis."
+keywords:
+  - "Nerve AI"
+  - "Connect your marketing platforms"
+  - "Connect and use X Ads"
+noindex: true
+tag: "Draft"
+---
+
+Connect X Ads to inspect advertising accounts, campaigns, line items, and available performance data. Line items are the ad-group-like level beneath a campaign.
+
+<Note>
+Draft for review. This guide includes steps or behavior awaiting product verification.
+</Note>
+
+## Before you connect
+
+Use an X identity with access to the advertising account. Have the account name, reporting dates, and objective ready.
+
+## Connect and verify
+
+1. In the intended workspace, open **Get started > Connect accounts**.
+2. Find **X Ads** and choose **Connect**.
+3. Complete the provider sign-in and review the permissions shown. Select an identity with access to the intended advertising account.
+4. Back in Nerve, check the connection status and use **Verify** if available.
+5. Ask your assistant to list accessible X advertising accounts before requesting a report.
+
+## What to ask Nerve
+
+Live discovery returned account and campaign lookup, line items, insights, funding instruments, targeting criteria, and promoted-content information. Begin with an account and campaign inventory, then ask for a supported insight breakdown.
+
+```text
+For X Ads account Example Brand, list campaigns and line items.
+Summarize available spend, impressions, clicks, and objective results
+for the last 7 complete days. Identify account currency and any
+missing pages of results. Do not change delivery or targeting.
+```
+
+## Check scope and limits
+
+A campaign and a line item are separate levels, so ask the assistant to label both. Large lists may require additional pages; ask whether all results were retrieved. Funding-instrument inspection does not authorize a billing change. Check current tools before requesting creation, budget updates, or other writes.
+
+If the expected account is missing, use [connection troubleshooting](/support-and-privacy/connection-problems). For expired access, see [Check or reconnect an account](/connections/connection-status).

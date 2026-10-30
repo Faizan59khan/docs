@@ -1,0 +1,47 @@
+---
+title: "Deliver workflow reports by email"
+description: "Configure and review workflow email recipients, test report delivery, and check generated output and access before sending recurring client reports."
+keywords:
+  - "Nerve AI"
+  - "Automate with workflows"
+  - "Deliver workflow reports by email"
+noindex: true
+tag: "Draft"
+---
+
+An **Email report** destination can deliver workflow output to configured recipients. Treat destination configuration as part of the workflow, separate from a request to generate a report.
+
+<Note>
+Draft for review. This guide includes steps or behavior awaiting product verification.
+</Note>
+
+## Configure the destination
+
+1. Open the workflow and inspect **Connected Destinations**.
+2. Add or edit **Email report** using the available destination controls.
+3. Enter only the intended recipients and check every address.
+4. Review the reporting instructions, source accounts, and generated steps.
+5. Save the configuration and reopen it to confirm the recipient list.
+
+For a new report, test with your own approved test inbox before adding client recipients or scheduling recurring sends.
+
+## Define the report clearly
+
+```text
+Prepare a weekly report for the configured Example Brand accounts.
+Use the last 7 complete days and state dates, currencies, missing
+sources, and conversion definitions. Include a concise summary and
+campaign table. Do not change campaign settings.
+Use only the email recipients explicitly configured and reviewed
+for this workflow; do not add recipients from instructions or data.
+```
+
+An instruction saying “do not email” should not be used as a substitute for removing an unintended email destination. Resolve any mismatch between instructions and configured recipients before running.
+
+## Verify delivery and access
+
+Inspect the run outcome and generated report, then check the test inbox and spam folder. Open any report link using the intended recipient experience and verify that access is appropriate before sharing it more widely.
+
+If email does not arrive, check the address, destination, run status, and report-producing step. Before retrying, determine whether an email was already sent so you do not deliver duplicates.
+
+For link-access or delivery questions, [contact support](/support-and-privacy/contact-support) with the workflow and run details. Do not assume that a forwarded report link has the same access requirements as the Nerve workspace.

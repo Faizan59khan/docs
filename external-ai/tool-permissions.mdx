@@ -1,0 +1,45 @@
+---
+title: "Understand tool requests and approval permissions"
+description: "Understand how Nerve discovers tools, reads data, and executes requests, and distinguish an assistant permission prompt from business approval."
+keywords:
+  - "Nerve AI"
+  - "Use Nerve in Claude and ChatGPT"
+  - "Understand tool requests and approval permissions"
+noindex: true
+tag: "Draft"
+---
+
+A tool request is how an assistant asks Nerve to retrieve data or perform a supported action. You describe the task in plain language; the assistant finds the relevant tools and their inputs.
+
+<Note>
+Draft for review. This guide includes steps or behavior awaiting product verification.
+</Note>
+
+## What happens during a request
+
+The assistant may check connections, search for tools, inspect their input requirements, and execute one or more operations. You do not need to memorize tool names or write technical requests.
+
+In the inspected Claude connection, Nerve exposed **Check Connections**, **Search Tools**, **Get Tool Schemas**, **Multi-Execute Tools**, and a plan-status tool. The execution tool can handle a batch of operations. Its broad write/delete permission label does not by itself tell you whether the particular batch is a read or a change.
+
+## Review the requested operation
+
+Before allowing a request, check:
+
+- Which platform and account it uses.
+- Whether it reads data, creates something, updates a setting, or deletes an object.
+- Which dates, budgets, statuses, recipients, or destinations are involved.
+- Whether the request matches what you asked the assistant to do.
+
+Use a one-time permission when you want to inspect each request rather than granting ongoing tool permission. Available choices depend on your assistant.
+
+## Permission and approval are different
+
+Allowing a tool gives the assistant permission to make that tool request. Business approval means you have reviewed the specific proposed change and its effect. A standing tool permission does not replace reviewing a new budget or campaign proposal.
+
+```text
+First retrieve the current settings and show the proposed changes.
+Include account, campaign, current value, proposed value, and expected
+effect. Do not execute any change until I approve that specific list.
+```
+
+For recurring workflows, inspect the saved steps and schedule as well as the assistant permissions. See [Review and approve AI actions](/campaign-management/approve-actions). If a tool request is unclear, ask the assistant to explain it before allowing it.

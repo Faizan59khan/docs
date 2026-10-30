@@ -1,0 +1,39 @@
+---
+title: "Understand missing data and reported metric differences"
+description: "Compare Nerve reports with platform dashboards using the same accounts, dates, metrics, attribution, and currencies, and distinguish missing data from zero."
+keywords:
+  - "Nerve AI"
+  - "Monitor performance with Analytics"
+  - "Understand missing data and reported metric differences"
+noindex: true
+---
+
+A difference between reports can come from scope, definitions, timing, or incomplete retrieval. Compare these details before assuming the data is wrong.
+
+## Compare like with like
+
+1. **Account:** confirm the same platform and account or property, including manager/client context.
+2. **Dates:** use identical start and end dates and check whether today is partial.
+3. **Timezone:** check the reporting boundary used by each source.
+4. **Metric:** compare the same conversion action, event, purchase definition, or result type.
+5. **Attribution:** inspect available attribution settings and reporting timing. Platform-reported results can be updated after the original report.
+6. **Currency:** keep local currencies separate unless a stated conversion method has been verified.
+7. **Completeness:** check failed sources, result limits, pagination, filters, and suppressed segments.
+
+## Missing is different from zero
+
+A zero can be a valid measured result. A blank, dash, unavailable field, or failed request can mean the metric was not returned. Ask which applies rather than converting every missing value into zero.
+
+```text
+Reconcile this difference for the named account and exact dates.
+State the metric definition, timezone, currency, filters, and source
+retrieval time you can verify. Identify incomplete requests or limits.
+If the evidence cannot explain the difference, say what is missing.
+Do not change measurement or campaign settings.
+```
+
+## Be careful with combined metrics
+
+A sum of platform-reported conversions is not necessarily a count of unique customers. Reach across campaigns or platforms is not automatically deduplicated. Demographic reports can omit small segments, so their totals may differ from campaign totals.
+
+If a mismatch persists, send [support](/support-and-privacy/contact-support) the account names, exact dates, metric names, error text, and a cropped comparison. Remove private identifiers and avoid sharing credentials or full client reports unless needed.

@@ -1,0 +1,45 @@
+---
+title: "Connect and use LinkedIn Ads"
+description: "Connect LinkedIn Ads to Nerve, confirm the correct account or property, and start with a scoped read-only request before broader analysis."
+keywords:
+  - "Nerve AI"
+  - "Connect your marketing platforms"
+  - "Connect and use LinkedIn Ads"
+noindex: true
+tag: "Draft"
+---
+
+Connect LinkedIn Ads to inspect B2B advertising accounts and analyze campaign, campaign-group, creative, or demographic performance where tools are available.
+
+<Note>
+Draft for review. This guide includes steps or behavior awaiting product verification.
+</Note>
+
+## Before you connect
+
+Use a LinkedIn identity with access to the intended advertising account. Choose the account, reporting period, and conversion goal before requesting an analysis.
+
+## Connect and verify
+
+1. In the intended workspace, open **Get started > Connect accounts** and find **LinkedIn Ads**.
+2. Choose **Connect**. If the Pipedream introduction opens, review it before choosing **Continue**.
+3. Complete the provider sign-in and permission screens for the intended advertising account.
+4. Return to Nerve and check the connection status. Use **Verify** if available.
+5. Ask your assistant to list accessible LinkedIn advertising accounts, then confirm the one to use.
+
+## What to ask Nerve
+
+Live discovery exposes advertising-account listing and campaign, campaign-group, creative, and demographic analytics. Start with campaign totals, then request a supported demographic breakdown. Ask which dimensions and metrics are available instead of assuming every LinkedIn interface report is exposed.
+
+```text
+For LinkedIn Ads account Example Brand, show campaign spend, clicks,
+and available conversions for the last 7 complete days. Then check
+which demographic breakdowns are available. Identify local currency
+and any suppressed segments. Do not change campaigns.
+```
+
+## Check scope and limits
+
+The inspected demographic schema describes privacy suppression for small segments. A demographic table can therefore have different totals from a campaign report. Keep costs in their stated local currency unless you explicitly request and verify a conversion method. LinkedIn was not listed in the workflow source form inspected; check availability in your workflow before planning automation.
+
+If the expected account is missing, use [connection troubleshooting](/support-and-privacy/connection-problems). For expired access, see [Check or reconnect an account](/connections/connection-status).

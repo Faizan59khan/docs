@@ -1,0 +1,58 @@
+---
+title: "Install the Nerve plugin and skills for Claude Code"
+description: "Install the Nerve Claude Code plugin from its repository marketplace, authorize the remote connector, and choose a packaged marketing skill."
+keywords:
+  - "Nerve AI"
+  - "Use Nerve in Claude and ChatGPT"
+  - "Install the Nerve plugin and skills for Claude Code"
+noindex: true
+tag: "Draft"
+---
+
+The Nerve Claude Code plugin combines a remote Nerve connection with packaged instructions for common marketing tasks. Use the remote connector guide instead if you only want Nerve in a normal Claude conversation.
+
+<Note>
+Draft for review. This guide includes steps or behavior awaiting product verification.
+</Note>
+
+## Before you start
+
+Have Claude Code available, a Nerve account, and a connected marketing platform. Installation and authentication are separate: installing the plugin does not grant access to your advertising accounts.
+
+## Install from the repository marketplace
+
+1. In a Claude Code session, add the repository marketplace:
+
+   ```text
+   /plugin marketplace add MatteMena/matte-claude-plugin
+   ```
+
+2. Open the Nerve plugin for installation:
+
+   ```text
+   /plugin install mattemena-nerve@mattemena
+   ```
+
+3. Review what it adds, select the install scope you intend, and follow the installation summary. Reload if Claude Code requests it.
+4. When the **mattemena-remote** server requests authentication, complete Nerve sign-in and authorization.
+
+The command format follows [Claude Code's plugin installation documentation](https://code.claude.com/docs/en/discover-plugins); the marketplace and plugin names come from the [Nerve repository](https://github.com/MatteMena/matte-claude-plugin).
+
+## Choose a skill
+
+The reviewed plugin contains these six skill folders:
+
+| Skill | Purpose |
+| --- | --- |
+| **matte-connector-core** | Shared connection and tool-use guidance |
+| **matte-media-planner** | Campaign briefing and media planning |
+| **matte-account-audit** | Structured account review |
+| **matte-performance-reporting** | Reporting and performance comparisons |
+| **matte-campaign-setup** | Proposed campaign structure and setup |
+| **matte-campaign-optimizer** | Performance investigation and optimization proposals |
+
+Open the installed plugin details or skill list to see the names exposed by your version. Start with a read-only account check, then ask for an audit or report. Before using setup or optimization skills, review [AI action approval](/campaign-management/approve-actions).
+
+## Verify installation
+
+Confirm the plugin is installed and ask Claude Code to check the connected platforms and intended account. If installation succeeds but tools fail, troubleshoot server authentication separately. Use the production server URL shown in the [Claude connection guide](/external-ai/claude), rather than an older test endpoint.

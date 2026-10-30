@@ -1,0 +1,41 @@
+---
+title: "Choose the correct workspace and remove AI access"
+description: "Verify the accounts available to an external assistant, avoid mixing client contexts, and distinguish removing AI access from platform disconnection."
+keywords:
+  - "Nerve AI"
+  - "Use Nerve in Claude and ChatGPT"
+  - "Choose the correct workspace and remove AI access"
+noindex: true
+tag: "Draft"
+---
+
+Check an external assistant's accessible accounts before switching client work. The workspace currently open in your Nerve browser is not sufficient evidence of the context used by an existing Claude or ChatGPT connection.
+
+<Note>
+Draft for review. This guide includes steps or behavior awaiting product verification.
+</Note>
+
+## Verify before analyzing a client
+
+1. In Nerve, note the intended workspace and connected platforms.
+2. In the external assistant, confirm which Nerve connection or plugin is selected.
+3. Ask it to check connections and list the accessible accounts for the platform you need.
+4. Match the intended account or property. If names repeat, resolve the identity before continuing.
+5. Make a small read-only request and confirm the returned scope.
+
+```text
+Check the Nerve connection currently available in this conversation.
+List accessible Google Ads customer accounts. Tell me whether you can
+verify the workspace identity; if not, say so. Do not assume it matches
+the workspace open in my browser. Make no changes.
+```
+
+If the accounts differ, inspect the Nerve identity used during authorization. Reconnect only after confirming the intended identity and reviewing any workspace choice shown. If the flow does not make its binding clear, ask support to verify it rather than guessing.
+
+## Remove an assistant connection
+
+In Claude, open **Customize > Connectors**, select Nerve, and use the available disconnect or removal control. In ChatGPT, manage the installed Nerve plugin and its connection from the plugin settings. Follow the confirmation shown in that assistant.
+
+Removing the assistant connection is separate from [disconnecting a marketing platform in Nerve](/connections/connection-status). A platform disconnection can affect team workflows; removing a plugin addresses that assistant's connection.
+
+Neither action should be treated as proof that past conversations, downloaded files, or shared reports were erased. For data-deletion or organization-wide access questions, contact [Nerve support](/support-and-privacy/contact-support).

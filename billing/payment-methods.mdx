@@ -1,0 +1,41 @@
+---
+title: "Subscribe and manage payment methods"
+description: "Find workspace billing, review a paid subscription checkout, and use saved-card and billing-portal controls to manage the payment method you intend to use."
+keywords:
+  - "Nerve AI"
+  - "Plans, credits, and billing"
+  - "Subscribe and manage payment methods"
+noindex: true
+tag: "Draft"
+---
+
+Open **Credits & Billing** from the credits widget in the sidebar to manage workspace payments. Owners and Admins handle billing changes. Confirm the workspace before starting checkout.
+
+<Note>
+Draft for review. This guide includes steps or behavior awaiting product verification.
+</Note>
+
+## Subscribe
+
+1. Open the **Plans** tab and review the current plan or trial.
+2. Choose the available **Subscribe** or **Resume plan** action for the intended offer.
+3. Review the amount, billing frequency, trial conditions, and any coupon field.
+4. Continue to Stripe using the displayed checkout action.
+5. Review the final total and payment details before confirming the purchase.
+6. Return to Nerve and check the plan status, billing period, and available credits.
+
+If you leave checkout without completing it, inspect the resulting status before starting another payment. A checkout screen opening is not proof that the subscription activated.
+
+## Add or update a card
+
+Use **Add payment method** from the billing or trial area when available. Complete the payment form and choose **Save card** only when you intend to store that method. You can also open **Manage billing** to review payment options in Stripe's billing portal.
+
+## Manage saved methods
+
+Open **Billing history** and review **Payment method**. Check the displayed card brand, masked digits, and expiry to identify the method. Use **Make default** when you want that card to be used for future charges. Before removing a card, read the confirmation and any requirement to set another default first.
+
+If several workspaces share a billing contact, confirm the effect of a card change before assuming it applies only to the workspace currently open.
+
+## If payment succeeds but access does not return
+
+Check the invoice and subscription status, refresh Nerve, and retry a small read-only request. If the state still disagrees with your payment receipt, [contact support](/support-and-privacy/contact-support). Share the invoice reference and workspace, never full card details or security codes.

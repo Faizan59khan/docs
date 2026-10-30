@@ -1,0 +1,43 @@
+---
+title: "Review and approve AI actions safely"
+description: "Distinguish analysis, assistant tool permission, a specific business change, and recurring automation authorization when reviewing Nerve AI actions."
+keywords:
+  - "Nerve AI"
+  - "Manage campaigns with AI"
+  - "Review and approve AI actions safely"
+noindex: true
+tag: "Draft"
+---
+
+Review what the assistant will do, which objects it will affect, and whether the result matches your intention. Three different decisions can be involved: permitting a tool call, approving a specific change, and authorizing recurring automation.
+
+<Note>
+Draft for review. This guide includes steps or behavior awaiting product verification.
+</Note>
+
+## Start with the operating intent
+
+For analysis, say **Read only; do not change anything**. For a possible change, ask for a proposal first. For execution, identify the approved entities and exact settings. Do not assume an analysis-oriented template name limits the actions in its steps.
+
+## Review before execution
+
+1. Confirm the workspace context, platform, account, and entity IDs.
+2. Read the current and proposed settings, including budget units, currency, dates, and actual status.
+3. Check created files, CRM updates, or email destinations as well as advertising changes.
+4. Resolve unsupported fields, assumptions, and defaults.
+5. Approve only the final proposal you intend to execute.
+6. Inspect the tool request and allow it if it matches that proposal.
+
+A tool's standing permission can allow later requests without a fresh permission prompt. Do not treat it as evidence that you reviewed each later business change. Conversely, an assistant asking for permission does not establish that the requested values are correct.
+
+## Review recurring workflows
+
+Inspect every step, selected account, destination, and schedule. A workflow instructed to apply budget changes is different from a report that only recommends them. Define account boundaries, budget limits, permitted actions, and what should happen when data is missing before enabling automation.
+
+The inspected **Daily Pacing Checker** template includes budget-adjustment instructions. Read the steps rather than relying on its name.
+
+## Verify afterward
+
+Ask for actual results, entity IDs, statuses, and any partial failure. Confirm consequential settings in the connected platform. If the outcome is unclear, inspect current state before retrying.
+
+See [tool permissions](/external-ai/tool-permissions) for assistant prompts and [workflow recovery](/workflows/recover-failed-run) for interrupted work.

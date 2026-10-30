@@ -1,0 +1,45 @@
+---
+title: "Stop, retry, and recover a failed workflow"
+description: "Inspect an interrupted workflow, identify completed external actions, fix the cause, and choose a retry scope without assuming the run was rolled back."
+keywords:
+  - "Nerve AI"
+  - "Automate with workflows"
+  - "Stop, retry, and recover a failed workflow"
+noindex: true
+tag: "Draft"
+---
+
+Investigate the run before retrying it. A workflow can complete some work before a later step fails, so a new run can repeat writes, exports, or emails unless you check what already happened.
+
+<Note>
+Draft for review. This guide includes steps or behavior awaiting product verification.
+</Note>
+
+## Inspect the failure
+
+1. Open the workflow's **Runs** tab and locate the affected run.
+2. Check its status, trigger, version, duration, credits, and available step details.
+3. Identify the first failed or interrupted step and read its error.
+4. Record which steps completed and whether they changed campaigns, CRM records, spreadsheets, or sent email.
+5. Verify consequential external results in the connected system.
+
+## Stop work in progress
+
+Use **Stop** when it is available for the running task, then confirm the resulting run state. Turning a schedule off addresses future recurrence; it is not proof that current execution stopped. Closing the browser is also not a reliable stop action.
+
+Stopping does not establish that completed external actions were reversed. Inspect their actual state before deciding on recovery.
+
+## Fix the cause
+
+| Cause | Next step |
+| --- | --- |
+| Expired or missing connection | Reconnect and verify the intended account. |
+| Insufficient credits or inactive plan | Review billing status and recorded usage before resuming. |
+| Invalid or missing input | Correct the source, field, date, or asset identified by the error. |
+| Incomplete external action | Inspect the platform result and define only the work still needed. |
+
+## Choose a retry scope
+
+Review whether the interface offers a step retry, run retry, or a new run. Do not assume those options resume identically. Confirm which steps will execute and what earlier output will be reused. For a task with writes or emails, ask support if that scope is unclear.
+
+After recovery, review actual outputs and the credit ledger. A failed or stopped status does not by itself establish a zero charge or prove that repeating work cannot create a duplicate.

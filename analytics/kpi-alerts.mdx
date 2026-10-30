@@ -1,0 +1,47 @@
+---
+title: "Investigate KPI alerts with AI"
+description: "Use advertiser-group targets to interpret Analytics alerts, check missing-data states, and ask AI for an evidence-based diagnosis before making changes."
+keywords:
+  - "Nerve AI"
+  - "Monitor performance with Analytics"
+  - "Investigate KPI alerts with AI"
+noindex: true
+tag: "Draft"
+---
+
+Performance alerts compare available results with targets configured in an advertiser group. Use an alert as a starting point for investigation, then review the underlying data and business context.
+
+<Note>
+Draft for review. This guide includes steps or behavior awaiting product verification.
+</Note>
+
+## Check the target first
+
+Open **Monitor > Analytics** and select the intended group and date range. Confirm the group objective, KPI, target value, and unit. A target entered for a different business goal can make the alert unhelpful even when the data is correct.
+
+## Read the alert state
+
+| State | How to approach it |
+| --- | --- |
+| **ON TRACK** | Review the actual result against the target and period. |
+| **AT RISK** or **OFF TRACK** | Investigate the size and cause of the gap before taking action. |
+| **NOT TRACKED** | Check whether the connected sources provide this KPI. |
+| **NO DATA** | Check the dates, group accounts, and connection access. |
+
+Do not interpret a missing-data state as zero performance. The threshold that separates alert states is not a universal marketing rule.
+
+## Ask for a diagnosis
+
+Use **Diagnose with AI** when available, then review the chat's account scope. Add the question you need answered:
+
+```text
+Investigate this KPI gap for the selected advertiser group and dates.
+Confirm the actual value, target, unit, and data completeness.
+Identify contributing platforms and campaigns, compare the preceding
+equivalent period, and distinguish evidence from hypotheses.
+Recommend next checks only. Do not change budgets or campaigns.
+```
+
+Check that the assistant addresses the same KPI and date range as the alert. For a cost metric, lower can be better; for a volume or return metric, the direction can differ. Review the underlying values rather than relying only on a status color.
+
+Use a separate [reviewed proposal](/campaign-management/review-changes) if you decide to make a campaign change.

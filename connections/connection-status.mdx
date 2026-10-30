@@ -1,0 +1,40 @@
+---
+title: "Check, reconnect, or disconnect an account"
+description: "Inspect platform connection status, verify account access, recover expired authorization, and review dependencies before disconnecting a source."
+keywords:
+  - "Nerve AI"
+  - "Connect your marketing platforms"
+  - "Check, reconnect, or disconnect an account"
+noindex: true
+tag: "Draft"
+---
+
+Check the connection before retrying a failed report. A connection status describes authorization; a successful data read confirms access to the account and task you need.
+
+<Note>
+Draft for review. This guide includes steps or behavior awaiting product verification.
+</Note>
+
+## Inspect a connection
+
+1. Open **Get started > Connect accounts** in the intended workspace.
+2. Use search to find the platform or connection.
+3. Filter the table with **All statuses**, **Needs attention**, **Active**, **Expired**, **Pending**, or **Revoked** as available.
+4. For an active connection, choose **Verify** to check it.
+5. Ask your assistant to list the accessible accounts or properties and perform a small read.
+
+## Recover access
+
+If access is expired or revoked, use the connection's reconnect action when offered. Complete the provider authorization with an identity that can access the intended account. Return to Nerve, verify the connection, then retry the specific account lookup.
+
+A pending connection may still need a provider step. Check for an open or blocked authorization window rather than repeatedly adding the same connection.
+
+## Before disconnecting
+
+Review workflows and other work that use the source. If a scheduled workflow depends on it, turn that schedule off while resolving the connection. Disconnecting is a shared workspace action, so coordinate with the team that uses the account.
+
+To disconnect, locate the intended connection, choose **Disconnect**, and read the confirmation before continuing. Check the resulting status afterward. Do not assume this also removes historical chat content, files, or records already shared with an external assistant.
+
+## If Verify succeeds but data is missing
+
+Confirm the particular account, property, date range, and status filter. Ask the assistant to distinguish an access error from an empty result. Use [AI connection and missing-account troubleshooting](/support-and-privacy/connection-problems) if the mismatch persists.

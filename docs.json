@@ -1,72 +1,202 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mintlify Starter Kit",
+  "name": "Nerve AI Help Center",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#22299C",
+    "light": "#7B85E0",
+    "dark": "#1A2057"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/logo/favicon.svg",
   "navigation": {
     "pages": [
       {
-        "group": "Getting Started",
+        "group": "Help Center",
         "pages": [
           "index",
           "quickstart"
         ]
+      },
+      {
+        "group": "Start here",
+        "pages": [
+          "start-here/what-is-nerve",
+          "start-here/sign-in",
+          "start-here/workspaces",
+          "start-here/first-setup",
+          "start-here/choose-an-assistant"
+        ]
+      },
+      {
+        "group": "Connect your platforms",
+        "pages": [
+          "connections/supported-integrations",
+          "connections/meta-ads",
+          "connections/google-ads",
+          "connections/google-analytics",
+          "connections/tiktok-ads",
+          "connections/snapchat-ads",
+          "connections/dv360",
+          "connections/tag-manager",
+          "connections/google-sheets",
+          "connections/hubspot",
+          "connections/linkedin-ads",
+          "connections/amazon-ads",
+          "connections/x-ads",
+          "connections/radius",
+          "connections/pfbm",
+          "connections/account-scope",
+          "connections/connection-status"
+        ]
+      },
+      {
+        "group": "Claude and ChatGPT",
+        "pages": [
+          "external-ai/claude",
+          "external-ai/chatgpt",
+          "external-ai/claude-code",
+          "external-ai/tool-permissions",
+          "external-ai/workspace-and-access"
+        ]
+      },
+      {
+        "group": "Nerve AI chat",
+        "pages": [
+          "nerve-ai/start-chat",
+          "nerve-ai/choose-accounts",
+          "nerve-ai/generated-files",
+          "nerve-ai/chat-history"
+        ]
+      },
+      {
+        "group": "Planning and reporting",
+        "pages": [
+          "planning-and-reporting/prompt-library",
+          "planning-and-reporting/media-planner",
+          "planning-and-reporting/account-audit",
+          "planning-and-reporting/performance-reports",
+          "planning-and-reporting/budget-pacing",
+          "planning-and-reporting/creative-performance",
+          "planning-and-reporting/audience-analysis"
+        ]
+      },
+      {
+        "group": "Analytics",
+        "pages": [
+          "analytics/advertiser-groups",
+          "analytics/dashboard",
+          "analytics/kpi-alerts",
+          "analytics/metric-differences"
+        ]
+      },
+      {
+        "group": "Campaign management",
+        "pages": [
+          "campaign-management/create-paused-campaign",
+          "campaign-management/duplicate-campaign",
+          "campaign-management/review-changes",
+          "campaign-management/approve-actions"
+        ]
+      },
+      {
+        "group": "Workflows",
+        "pages": [
+          "workflows/create-workflow",
+          "workflows/edit-workflow",
+          "workflows/run-results",
+          "workflows/schedule",
+          "workflows/templates",
+          "workflows/versions",
+          "workflows/email-reports",
+          "workflows/recover-failed-run"
+        ]
+      },
+      {
+        "group": "Workspace and account",
+        "pages": [
+          "workspace-and-account/members-and-roles",
+          "workspace-and-account/multiple-workspaces",
+          "workspace-and-account/profile-and-email",
+          "workspace-and-account/security"
+        ]
+      },
+      {
+        "group": "Plans and billing",
+        "pages": [
+          "billing/plans",
+          "billing/free-trial",
+          "billing/credits",
+          "billing/payment-methods",
+          "billing/invoices-and-cancellation"
+        ]
+      },
+      {
+        "group": "Troubleshooting and privacy",
+        "pages": [
+          "support-and-privacy/connection-problems",
+          "support-and-privacy/contact-support",
+          "support-and-privacy/connected-data"
+        ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
+    ]
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/logo/nerve-light.svg",
+    "dark": "/logo/nerve-dark.svg",
+    "href": "/"
   },
   "navbar": {
     "links": [
       {
-        "label": "Support",
-        "href": "mailto:support@mintlify.com"
+        "href": "mailto:hello@mattemena.com",
+        "label": "Contact support"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://app.mintlify.com"
+      "label": "Open Nerve",
+      "href": "https://app.nerve.mattemena.com/"
     }
   },
   "contextual": {
     "options": [
       "copy",
-      "view",
-      "chatgpt",
-      "claude",
-      "perplexity",
-      "mcp",
-      "cursor",
-      "vscode"
+      "view"
     ]
   },
   "footer": {
-    "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
-    }
+    "links": [
+      {
+        "header": "Nerve AI",
+        "items": [
+          {
+            "label": "Open Nerve",
+            "href": "https://app.nerve.mattemena.com/"
+          },
+          {
+            "label": "Contact support",
+            "href": "mailto:hello@mattemena.com"
+          }
+        ]
+      }
+    ]
+  },
+  "description": "Practical guides to connect your marketing accounts, work with AI, analyze performance, and build repeatable workflows in Nerve.",
+  "appearance": {
+    "default": "light"
+  },
+  "search": {
+    "prompt": "Search the Help Center..."
+  },
+  "seo": {
+    "metatags": {
+      "robots": "noindex, nofollow",
+      "og:site_name": "Nerve AI Help Center"
+    },
+    "indexing": "navigable"
+  },
+  "banner": {
+    "content": "Help Center draft · For review",
+    "dismissible": false
   }
 }

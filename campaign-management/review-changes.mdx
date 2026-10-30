@@ -1,0 +1,47 @@
+---
+title: "Review budget, status, and optimization changes"
+description: "Review the exact accounts, campaigns, current values, and proposed settings before approving a budget reallocation, status change, or optimization action."
+keywords:
+  - "Nerve AI"
+  - "Manage campaigns with AI"
+  - "Review budget, status, and optimization changes"
+noindex: true
+tag: "Draft"
+---
+
+Ask for a current-versus-proposed table before changing budgets, status, bids, or targeting. A recommendation such as “scale the winner” is not specific enough to approve.
+
+<Note>
+Draft for review. This guide includes steps or behavior awaiting product verification.
+</Note>
+
+## Build a concrete proposal
+
+```text
+Propose changes for the selected campaigns based on the last 14
+complete days. First retrieve their current settings. Show platform,
+account, campaign and entity IDs, current value, proposed value,
+absolute and percentage change, rationale, and expected spending
+effect. Keep the total planned budget within the agreed cap.
+Identify shared budgets or linked objects affected.
+Do not implement any change until I approve the final table.
+```
+
+## Review the details
+
+| Change | What to confirm |
+| --- | --- |
+| Budget | Daily versus lifetime amount, currency, shared budgets, and aggregate spending effect |
+| Status | Exact entity level, current state, proposed state, and whether delivery can begin or stop |
+| Bids or targeting | Supported setting, affected audience or delivery, and business constraints |
+| Reallocation | Reductions and increases together, with the total checked against your cap |
+
+Ask how the evidence supports the change and whether low volume, incomplete attribution, or missing sources weaken the recommendation. Supply constraints the assistant cannot infer, such as stock limits, geographic exclusions, or client commitments.
+
+## Approve and verify
+
+Approve the specific rows you want executed. If the assistant changes the proposal, review the new version. After execution, request actual settings for every affected entity, including failures or skipped operations, and compare them with your approval.
+
+For partial completion, inspect the successful changes before retrying the remainder. Do not assume a batch is an all-or-nothing transaction.
+
+For recurring optimization, review the workflow's full instructions and schedule separately. See [AI action approval](/campaign-management/approve-actions).
